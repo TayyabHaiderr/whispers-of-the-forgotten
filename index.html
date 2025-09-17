@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Whispers of the Forgotten</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: sans-serif; background: #222; color: #eee; }
+    #storyBox {
+      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+      background-color: rgba(0,0,0,0.8); color: #fff; padding: 10px; max-width: 80%;
+      border-radius: 8px; font-size: 16px; min-height: 50px; max-height: 120px; overflow-y: auto;
+    }
+    #instructions {
+      position: absolute; top: 10px; left: 10px; color: #ccc; font-size: 14px;
+      background: rgba(0,0,0,0.6); padding: 6px 10px; border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <div id="instructions">
+    Move: WASD or Arrow Keys<br />
+    Interact: Click near objects or press 'E'
+  </div>
+  <div id="storyBox">Explore the town to uncover its story...</div>
+  <script src="game.js"></script>
+</body>
+</html>
